@@ -30,7 +30,10 @@
     self.selectedIndexes = [[NSMutableIndexSet alloc] initWithIndexSet:validIndexes];
     [self selectSegmentsOfSelectedIndexes];
 }
-
+- (void)selectSegmentsWithIndexes:(NSIndexSet *)indexSet
+{
+    self.selectedSegmentIndexes = indexSet;
+}
 - (void)selectAllSegments:(BOOL)select
 {
     self.selectedSegmentIndexes = select ? [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, self.numberOfSegments)] : [NSIndexSet indexSet];

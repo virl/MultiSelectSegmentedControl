@@ -23,5 +23,5 @@
 @property (nonatomic, weak) id<MultiSelectSegmentedControlDelegate> delegate;
 
 - (void)selectAllSegments:(BOOL)select; // pass NO to deselect all
-
+- (void)selectSegmentsWithIndexes:(NSIndexSet *)indexSet;
 @end
