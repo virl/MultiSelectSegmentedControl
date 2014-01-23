@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
     :git => 'https://github.com/ArmandsB/MultiSelectSegmentedControl'
   }
   s.platform = :ios, '6.1'
-  s.source_files =  'MultiSelectSegmentedControl.h,m'
+  s.source_files =  'Source/'
   s.frameworks = 'UIKit'
   s.requires_arc = true
 end
